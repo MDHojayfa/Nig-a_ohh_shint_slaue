@@ -146,7 +146,7 @@ To add your own platform:
 
 ## 📮 Contact
 
-For bugs or requests, open an [Issue](https://github.com/yourusername/ultimate-osint-tool/issues) or DM me on Telegram: `@yourhandle`
+For bugs or requests, open an [Issue](https://github.com/MDHojayfa/Nig-a_ohh_shint_slaue/issues) or DM me on Telegram: `@urniggar`
 
 ---
 
