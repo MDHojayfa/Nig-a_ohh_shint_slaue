@@ -1,32 +1,40 @@
 # Nig-a_ohh_shint_slaue
-Ultimate powered ohsint slaue with 0 cast
 
-# 🔍 Ultimate OSINT Tool (Social Media Intelligence)
+> ⚡ Ultimate cross-platform OSINT slaue with 0 cast – fast, modular & blazing 🔥
 
-> Powerful and interactive Open Source Intelligence (OSINT) tool for Facebook, Instagram, Twitter, and Reddit.  
-> Designed to run seamlessly on **Linux** and **Termux (Android)** with zero compromises.  
+---
+
+## 🔍 Ultimate OSINT Tool (Social Media Intelligence)
+
+Powerful and interactive Open Source Intelligence (OSINT) tool for:
+- Facebook
+- Instagram
+- Twitter (X)
+- Reddit
+
+🖥️ Runs perfectly on **Linux** and **Termux (Android)** – no compromises, no paid API keys!
 
 ---
 
 ## 🚀 Features
 
-- ✅ Platform selector (FB, IG, Twitter, Reddit)
-- ✅ Auto dependency checker with size display and permission prompt
-- ✅ Cool CLI animations and themed text
-- ✅ Modular and extensible API scraping engine
-- ✅ Runs smoothly on Termux & Linux
-- ✅ Exports structured data to JSON
+- ✅ Select platform (FB, IG, Twitter, Reddit)
+- ✅ Auto dependency checker with size and permission prompts
+- ✅ Cool CLI animations + themed text
+- ✅ Modular scraping & API engine
+- ✅ JSON export support
+- ✅ Lightweight, fast & 100% free
 
 ---
 
-## 📲 Platforms Supported
+## 📲 Supported Platforms
 
-| Platform  | Method Used              | Status       |
-|-----------|--------------------------|--------------|
-| Facebook  | Graph API, Scraping      | ✅ Complete   |
-| Instagram | Osintgram, Scraping      | ✅ Complete   |
-| Twitter   | Twint (no API needed)    | ✅ Complete   |
-| Reddit    | PRAW (Reddit API)        | ✅ Complete   |
+| Platform  | Method Used           | Status      |
+|----------|------------------------|-------------|
+| Facebook | Graph API, scraping    | ✅ Done      |
+| Instagram| Osintgram + scraping   | ✅ Done      |
+| Twitter  | Twint (no API needed)  | ✅ Done      |
+| Reddit   | PRAW (Reddit API)      | ✅ Done      |
 
 ---
 
@@ -34,9 +42,9 @@ Ultimate powered ohsint slaue with 0 cast
 
 - Python 3.10+
 - Git
-- Termux / Linux shell
-- Internet connection
-- Optional: Tor or VPN (for stealthy use)
+- Termux or Linux shell
+- Internet connection 🌐
+- (Optional) VPN / Tor for stealth mode 🕶️
 
 ---
 
@@ -47,8 +55,8 @@ Ultimate powered ohsint slaue with 0 cast
 ```bash
 pkg update && pkg upgrade
 pkg install git python -y
-git clone https://github.com/yourusername/ultimate-osint-tool.git
-cd ultimate-osint-tool
+git clone https://github.com/yourusername/Nig-a_ohh_shint_slaue.git
+cd Nig-a_ohh_shint_slaue
 python osint_tool.py
 ```
 
@@ -56,50 +64,42 @@ python osint_tool.py
 
 ```bash
 sudo apt update && sudo apt install git python3 -y
-git clone https://github.com/yourusername/ultimate-osint-tool.git
-cd ultimate-osint-tool
+git clone https://github.com/yourusername/Nig-a_ohh_shint_slaue.git
+cd Nig-a_ohh_shint_slaue
 python3 osint_tool.py
 ```
 
 ---
 
-## 🧪 First Run Setup
+## ⚙️ First Time Setup Instructions
 
-On first run, the tool will:
-
-1. Check for all required dependencies
-2. Show the size of each package
-3. Ask your permission to install them
-4. Show cool animations while installing
-5. Start the OSINT wizard
-
----
-
-## 🕵️ Usage Guide
-
-1. Launch the tool:
-   ```bash
-   python osint_tool.py
-   ```
-
-2. Select a platform: `Facebook`, `Instagram`, `Twitter`, `Reddit`
-
-3. Enter the **username or profile link**
-
-4. Let the tool collect:
-   - Public details
-   - Post metadata
-   - Bio, friends/followers
-   - Related images or links
-   - And more...
-
-5. Export or view the result in:
-   - Pretty console format
-   - JSON file for advanced analysis
+On the first run:
+1. All dependencies will be checked ✅
+2. You’ll see required sizes 📦
+3. It will ask for your permission ✅
+4. Installation with CLI animations 🌀
+5. Tool launches with interactive wizard 🚀
 
 ---
 
-## 📁 Output Example
+## 🕵️ How To Use
+
+```bash
+python osint_tool.py
+```
+
+Then:
+- Choose a platform
+- Input the username or profile URL
+- Let the tool collect:
+  - Public info, posts, metadata
+  - Friends/followers data
+  - Images, captions, links
+  - JSON-ready export 📁
+
+---
+
+## 📁 Output Format
 
 ```json
 {
@@ -116,40 +116,118 @@ On first run, the tool will:
 
 ---
 
+## 🔑 Instagram Login Setup
+
+For Instagram functions to work properly, you need to add your account credentials in the `credentials.json` file in the project root.
+
+Example format:
+
+```json
+{
+  "instagram": {
+    "username": "your_instagram_username",
+    "password": "your_instagram_password"
+  }
+}
+```
+
+⚠️ **Important:**
+- Use a dedicated or dummy account for OSINT purposes if possible.
+- Never commit your real credentials to GitHub or share this file.
+- This file is only used locally on your machine.
+
+---
+
 ## 👨‍💻 Developer Mode
 
-To add your own platform:
+Want to add your own platform module?
 
-1. Go to `platforms/` folder  
-2. Add a file: `yourplatform.py`  
-3. Create a function: `def fetch_data(username):`  
+1. Go to `platforms/`
+2. Create `yourplatform.py`
+3. Define:
+```python
+def fetch_data(username):
+    return {...}
+```
 4. Register it in `osint_tool.py`
 
 ---
 
-## 🔒 Legal Disclaimer
+## 🔒 Legal Note
 
-> This tool is for **educational** and **ethical hacking** purposes only.  
-> Unauthorized use of this tool against accounts or networks you do not own is illegal.  
-> You are responsible for your actions.
-
----
-
-## 🧊 Want to contribute?
-
-- Fork the repo
-- Create your feature branch (`git checkout -b feature/xyz`)
-- Commit your changes (`git commit -m 'Add xyz'`)
-- Push and make a pull request!
+> 🛑 This tool is for **educational and ethical purposes only**.  
+> Do not use against anyone you don’t have legal access to.  
+> Use responsibly. You are accountable for your actions.
 
 ---
 
-## 📮 Contact
+## 💡 Pillow Installation Fix (If You Get Errors)
 
-For bugs or requests, open an [Issue](https://github.com/MDHojayfa/Nig-a_ohh_shint_slaue/issues) or DM me on Telegram: `@urniggar`
+If you face errors while installing the Pillow library, it's likely due to missing build dependencies or JPEG development libraries.
+
+Follow the instructions below based on your platform:
 
 ---
 
-## ⭐ Star This Repo
+### 🛠️ Termux (Android)
 
-If you find this project useful, don't forget to ⭐ the repo and share with your cyber friends!
+Run the following commands in Termux before installing Pillow:
+
+```bash
+pkg update
+pkg install python
+pkg install clang make libjpeg-turbo libjpeg-turbo-dev zlib zlib-dev freetype freetype-dev libtiff
+```
+
+Then upgrade pip and install Pillow:
+
+```bash
+pip install --upgrade pip setuptools wheel
+pip install Pillow
+```
+
+---
+
+### 🐧 Ubuntu/Debian (Reference)
+
+Run the following commands to install required packages:
+
+```bash
+sudo apt-get update
+sudo apt-get install python3-dev python3-pip build-essential libjpeg-dev zlib1g-dev libfreetype6-dev libtiff-dev
+pip3 install Pillow
+```
+
+Then re-run the script. Pillow should install and work without errors.
+
+---
+
+## 💥 Contribute Like a Beast
+
+- Fork this repo
+- Make your changes
+- Push and pull request 🙌
+
+```bash
+git checkout -b feature/your-feature
+# edit your code
+git commit -m "Added awesome feature"
+git push origin feature/your-feature
+```
+
+---
+
+## 📮 Contact / Report Bugs
+
+Open an issue: https://github.com/MDHojayfa/Nig-a_ohh_shint_slaue/issues  
+Telegram: [@urniggar](https://t.me/urniggar)
+
+---
+
+## ⭐ Star This Project
+
+If you love OSINT and hacking tools, give it a star ⭐ and share it with your community!
+
+---
+
+🛠 Built with love ❤️, CLI power ⚡, and zero excuses 🧠
